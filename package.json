@@ -1,0 +1,33 @@
+{
+  "name": "throttlehawk-backend",
+  "version": "1.0.0",
+  "description": "High-performance API rate-limiting and real-time telemetry engine.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "lint": "eslint src --ext .js"
+  },
+  "keywords": [
+    "rate-limiting",
+    "redis",
+    "websocket",
+    "telemetry",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-hawk-bg text-hawk-text antialiased;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  ::selection {
+    background-color: rgba(0, 230, 118, 0.3);
+  }
+}
+
+/* Subtle pulse used to indicate a live/active telemetry connection. */
+@keyframes hawk-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.hawk-live-dot {
+  animation: hawk-pulse 1.6s ease-in-out infinite;
+}
